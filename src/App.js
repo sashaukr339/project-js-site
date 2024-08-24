@@ -1,9 +1,7 @@
-
 import React from "react";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Items from "./components/Items";
-
 
 class App extends React.Component {
   constructor(props){
@@ -43,14 +41,6 @@ class App extends React.Component {
           price:'15000'
         }
 
-
-
-
-
-
-
-
-        
       ]
     }
   }
@@ -64,4 +54,5 @@ class App extends React.Component {
   );
  }
 }
+
 export default App;

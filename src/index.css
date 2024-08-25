@@ -80,14 +80,48 @@ header .presentation::before{
 
 header .shop-cart-button{
   cursor: pointer;
-  transition: color 500ms ease;
+  transition: color, transform 500ms ease;
 }
 
 header .shop-cart-button:hover,
 header .shop-cart-button.active{
   color: #ff0000;
+  transform: scale(1.5);
 }
 
+header .shop-cart{
+  position: absolute;
+  top: 80px;
+  right: 35;
+  width: 450px;
+  min-height: 45px;
+  background: #eaebeb;
+  -webkit-box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.78);
+  -moz-box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.78);
+  box-shadow: 0px 0px 23px 7px rgba(0,0,0,0.78);
+  z-index: 1000;
+
+}
+
+header .shop-cart{
+  width: 100%;
+}
+
+header .shop-cart .item img{
+  width: 70px;
+  float: left;
+  margin-right: 20px;
+}
+
+header .shop-cart .item h2{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+header .shop-cart .item p{
+  color: #464444;
+  font-weight: 600
+}
 
 main{
   display: flex;
